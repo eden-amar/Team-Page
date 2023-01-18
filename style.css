@@ -1,0 +1,51 @@
+body{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+header{display: flex;justify-content: space-around;} 
+
+.main-section {display: grid; grid-template-columns: repeat(3, 25%); gap: 70px;}
+
+.page-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.up-image{margin-top: -200px;}
+
+.section-info{max-width: 300px; }
+
+.team-image{ width: 200px; display: flex; align-items: center;justify-content: center;}
+
+.team-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-image{margin-top: 200px;}
+
+.team-info-job{
+    writing-mode: vertical-lr;
+    margin-left: 1px;
+    margin-top: -170px;
+}
+.team-info-name{font-weight:bold;}
+
+.footer-text{text-align: center;padding-top: 50px;}
+
+@media (max-width: 600px) {
+header{display: block;}
+
+.main-section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 0;
+}
+.up-image{margin-top: 0;}
+
+.down-image{margin-top: 0;}
+
+.down-image-small-screan{ margin-top: 150px;}
+
+.team-image{width: 150px;}
+
+.team-info-job{margin-top: -130px;}}
